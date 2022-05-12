@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./nft-card.css";
 
-import Modal from "../../Modal/Modal";
+import Modal from "../../Modal/Modal.jsx";
 
 const NftCard = (props) => {
   const { title, id, currentBid, creatorImg, imgUrl, creator } = props.item;
@@ -18,7 +18,7 @@ const NftCard = (props) => {
 
       <div className="nft__content">
         <h5 className="nft__title">
-          <Link to="/market/${id}">{title}</Link>
+          <Link to={`/market/${id}`}>{title}</Link>
         </h5>
 
         <div className="creator__info-wrapper d-flex gap-3">
@@ -28,7 +28,7 @@ const NftCard = (props) => {
 
           <div className="creator__info w-100 d-flex align-items-center justify-content-between">
             <div>
-              <h6>Created by </h6>
+              <h6>Created By</h6>
               <p>{creator}</p>
             </div>
 
@@ -39,9 +39,9 @@ const NftCard = (props) => {
           </div>
         </div>
 
-        <div className=" mt-3 d-flex align-items-center justify-center-between">
+        <div className=" mt-3 d-flex align-items-center justify-content-between">
           <button
-            className="bid__btn d-flex align-items-center gap-3"
+            className="bid__btn d-flex align-items-center gap-1"
             onClick={() => setShowModal(true)}
           >
             <i class="ri-shopping-bag-line"></i> Place Bid
