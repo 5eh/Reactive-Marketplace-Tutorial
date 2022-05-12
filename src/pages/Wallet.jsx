@@ -1,7 +1,10 @@
 import React from "react";
 
+import CommonSection from "../components/ui/Common-section/CommonSection";
+import { Container } from "reactstrap";
+
 const Wallet = () => {
-  return <div>Wallet</div>;
+  return <></>;
 };
 
 export default Wallet;

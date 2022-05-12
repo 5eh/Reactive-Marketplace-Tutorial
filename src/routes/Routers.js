@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 
 import { Routes, Route, Navigate } from 'react-router-dom'
@@ -27,4 +25,4 @@ export const Routers = () => {
   </Routes>
 }
 
-export default Routers
+export default Routers;
